@@ -1,0 +1,96 @@
+/* #title {
+    margin: auto;
+} */
+
+/*Neon*/
+
+#lofi {
+    text-align: center;
+    font-size: 10em;
+    font-family: blanka;
+    font-weight: bold;
+    position: relative;
+    bottom: 200px;
+    /* position: absolute;
+    bottom: 80%;
+    left: 30%; */
+}
+
+#press_key {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'blanka', cursive;
+    color: rgb(224, 224, 224);
+    text-shadow: -3px 0px 5px #f5f5f5, 0px 0px 2px #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.12s;
+    transition: all 0.1s;
+}
+
+#lofi a {
+    font-size: 100px;
+    color: #030303;
+    text-shadow: -3px 0px 5px #525252, 0px 0px 2px #686767;
+}
+
+
+
+#lofi a {
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+#lofi a:hover {
+    color: #ffffff;
+}
+
+/*glow for webkit*/
+
+@-webkit-keyframes neon2 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    }
+}
+
+/*glow for mozilla*/
+
+@-moz-keyframes neon2 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    }
+}
+
+/*glow*/
+
+@keyframes neon2 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF,
+         0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF,
+         0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    }
+}
+
+/*REEEEEEEEEEESPONSIVE*/
+
+@media (max-width: 500px) {
+    #container {
+        width: 100%;
+    }
+    p {
+        font-size: 3.5em;
+    }
+}

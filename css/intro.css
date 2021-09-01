@@ -1,0 +1,43 @@
+#vidtop-content {
+    top: 100%;
+    color: #fff;
+}
+
+#vidtop-content p{
+    color: rgb(204, 202, 202);
+}
+
+.vid-info {
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    left: 10%;
+    width: 80%;
+    background: rgba(78, 78, 78, 0.3);
+    color: #fff;
+    padding: 1rem;
+    font-family:  Helvetica, sans-serif;
+}
+
+.vid-info p {
+    padding-top: 10px;
+    text-align: left;
+}
+
+.vid-info h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+.vid-info a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+    transition: .6s background;
+    border-bottom: none;
+    margin: 1rem auto;
+    text-align: center;
+}

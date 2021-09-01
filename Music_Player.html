@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="./kirai/timeline.html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lofi_</title>
+    <link rel="shortcut icon" href="./img/1621905149.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/slide_show.css">
+    <link rel="stylesheet" href="./css/music_player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/neon_clock.css">
+    <link href="https://fonts.font.im/css?family=Monoton" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/blanka" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/video.css">
+    <link rel="stylesheet" href="./css/neon_glow.css">
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="stylesheet" href="./css/glitch.css">
+    <link rel="stylesheet" href="./css/Pomodoro.css">
+    <link rel="stylesheet" href="./css/Glassmorphism.css">
+
+</head>
+
+<body onkeypress="plusSlides(1)">
+    <div class="neon-clock">
+        <span class="timer-num"></span>
+        <span class="timer-num"></span>
+        <span class="timer-sep">:</span>
+        <span class="timer-num"></span>
+        <span class="timer-num"></span>
+        <span class="timer-sep">:</span>
+        <span class="timer-num"></span>
+        <span class="timer-num"></span>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <video autoplay muted loop id="myVideo" class='bg_video'>
+                <source src="./video/ISS_Symphony.mp4" type="video/mp4">
+            </video>
+            <div class="neon-wrap">
+                <div class="neon-glow">
+                    <div id="title">
+                        <div id='lofi'><a>Lofi_WORLD</a></div>
+                    </div>
+                </div>
+                <div class='press_key'>press any<span class="glitch" data-text="KEY">KEY</span> </div>
+                <div id="vidtop-content">
+                    <div class="vid-info">
+                        <h1>Lo-fi Music<br>A Secret to Focusing During Study Sessions</h1>
+                        <p> Lo-fi music refers to a genre of music produced with low-fidelity signals, typically
+                            re-creating the hiss, warble and saturation of recordings made with a tape machine. Most
+                            lo-fi music draws on hip-hop influences—especially its typical drum patterns.
+                        <p>The standards of sound quality (fidelity) and music production have evolved throughout the
+                            decades, meaning that some older examples of lo-fi may not have been originally recognized
+                            as such. Lo-fi began to be recognized as a style of popular music in the 1990s, when it
+                            became alternately referred to as DIY music.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="music_player">
+                <div id="app-cover">
+                    <div id="bg-artwork"></div>
+                    <div id="bg-layer"></div>
+                    <div id="player">
+                        <link rel="preconnect" href="https://fonts.gstatic.com">
+                        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+                        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+                        <div class="wrapper">
+                            <div class="box" style="cursor:pointer;" onclick="location.href=
+                            './kirai/timeline.html';" target="_blank">
+                                <div style="cursor:pointer;" class="description">
+                                    <h2>Take a Break</h2>
+                                    <h4>Check my trekking records</h4>
+                                    <img src="./img/trekking.jpg" alt="trekking" style="width: 350px; height: 250px;">
+                                </div>
+                            </div>
+
+                            <div id="tomato">
+                                <article>
+                                    <div>
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <!DOCTYPE svg
+                                            PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.5em"
+                                            height="22.5em" viewBox="0 0 200 200" enable-background="new 0 0 200 200"
+                                            xml:space="preserve" class="svg-loader">
+                                            <defs>
+                                                <filter id="glow" x="-120%" y="-120%" width="400%" height="400%">
+                                                    <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0">
+                                                    </feOffset>
+                                                    <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10">
+                                                    </feGaussianBlur>
+                                                    <feBlend in="SourceGraphic" in2="blurOut" mode="overlay"></feBlend>
+                                                </filter>
+                                            </defs>
+                                            <g>
+                                                <circle fill="none" cx="6.25em" cy="6.25em" r="5em" class="gray"
+                                                    transform="scale(.8, .8) translate(25 25)" />
+                                                <circle id="seconds_circle" fill="none" cx="6.25em" cy="6.25em" r="5em"
+                                                    class="svg-loader_grow" role="progressbar"
+                                                    transform="rotate(-89 100 100) scale(.8, .8) translate(25 25)"
+                                                    filter="url(#glow)" />
+                                                <text id="second_text" text-align="center" x="1.3em" y="2.4em"
+                                                    font-family="'Open Sans', Verdana" font-size="3em"
+                                                    fill="#FFF">:00</text>
+                                                <text id="minute_text" text-align="center" x="5.5em" y="4em"
+                                                    font-family="'Open Sans', Verdana" font-size="1em"
+                                                    fill="#FFF">25</text>
+                                                <circle id="minutes_circle" fill="none" cx="6.25em" cy="6.25em" r="5em"
+                                                    class="svg-loader_grow" role="progressbar"
+                                                    transform="rotate(-89 100 100) translate(0 200) scale(1, -1)"
+                                                    filter="url(#glow)" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h1 class="timerControls">
+                                            <span id="sub">-</span>
+                                            <span id="minuteCount"><i>25</i><br>
+                                                <span>minutes</span>
+                                            </span>
+                                            <span id="plus">+</span>
+                                        </h1>
+                                        <button id="start">Start Timer</button>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div id="player-track" class="player_track">
+                                <div id="album-name"></div>
+                                <div id="track-name"></div>
+                                <div id="track-time">
+                                    <div id="current-time"></div>
+                                    <div id="track-length"></div>
+                                </div>
+                                <div id="s-area">
+                                    <div id="ins-time"></div>
+                                    <div id="s-hover"></div>
+                                    <div id="seek-bar"></div>
+                                </div>
+                            </div>
+
+                            <div id="player-content">
+                                <div id="album-art">
+                                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+                                        class="active" id="_1">
+                                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_2.jpg"
+                                        id="_2">
+                                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_3.jpg"
+                                        id="_3">
+                                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_4.jpg"
+                                        id="_4">
+                                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_5.jpg"
+                                        id="_5">
+                                    <div id="buffer-box">Buffering ...</div>
+                                </div>
+                                <div id="player-controls">
+                                    <div class="control">
+                                        <div class="button" id="play-previous">
+                                            <i class="fas fa-backward"></i>
+                                        </div>
+                                    </div>
+                                    <div class="control">
+                                        <div class="button" id="play-pause-button">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+                                    <div class="control">
+                                        <div class="button" id="play-next">
+                                            <i class="fas fa-forward"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js">
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/jquery-3.6.0.js"></script>
+        <script src="./js/slide_show.js"></script>
+        <script src="./js/player.js"></script>
+        <script src="./js/neon_clock.js"></script>
+        <script src="./js/glitch_text.js"></script>
+        <script src="./js/Pomodoro.js"></script>
+        <script src="./js/Glassmorphism copy.js"></script>
+</body>
+
+</html>
